@@ -1,0 +1,30 @@
+.container{
+  display: inline-block;
+  
+}
+
+.card{
+  width: 230px;
+  height: min-content;
+  background-color: lightgreen;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card__img{
+  width: 200px;
+}
+
+.card__title{
+  text-align: center;
+}
