@@ -1,10 +1,10 @@
-.container{
+.containerCard{
   display: inline-block;
   
 }
 
 .card{
-  width: 230px;
+  width: 280px;
   height: min-content;
   background-color: lightgreen;
   margin: 5px;

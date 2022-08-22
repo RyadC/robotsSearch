@@ -4,7 +4,7 @@ import './Card.css';
 const Card = (props) => {
   const { id, name, email } = props;
   return(
-    <div className="container">
+    <div className="containerCard">
       <div className="card">
         <img alt="robots" src={`https://robohash.org/${id}?50x50`} className="card__img"/>
         <div>
@@ -13,7 +13,6 @@ const Card = (props) => {
         </div>
       </div>
     </div>
-
   )
 }
 
