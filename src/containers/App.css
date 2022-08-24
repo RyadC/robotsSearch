@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Sega';
+
+  src: url('./SEGA.TTF');
+}
+
+.container{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  margin: 20px;
+  font-family: 'Sega', sans-serif;
+  font-weight: lighter;
+  color: rgb(5, 185, 195);
+}
+
+.loading{
+  font-size: 50px;
+  text-align: center;
+  color: rgb(5, 185, 195);
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+
+.separator{
+  width: 100%;
+  border: solid 1px #4f4e4eab;
+}
