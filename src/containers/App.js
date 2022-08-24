@@ -3,6 +3,7 @@ import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
 import './App.css';
+import ErrorBoundry from "./ErrorBoundry";
 
 class App extends Component {
 
@@ -49,7 +50,9 @@ class App extends Component {
           <hr className="separator"></hr>
         {/* Le Scroll ci dessous est différent des autres, il a une balise fermente. Chaque composant possède dans ces props la propriété children. Je peux accéder aux éléments conten u dans le composant Scroll via props.children. En ajoutant un style à Scroll je peux réutiliser le composant Scroll sur d'autres composant pour leur donner le meme style. Cela me permet d'avoir une réutilisabilité des composants */}
           <Scroll>
-            <CardList robots={filterRobots} />
+            <ErrorBoundry>
+              <CardList robots={filterRobots} />
+            </ErrorBoundry>
           </Scroll>
         </div>  
       )

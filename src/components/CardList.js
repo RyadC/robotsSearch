@@ -3,6 +3,10 @@ import Card from "./Card";
 import './CardList.css';
 
 const CardList = ({ robots }) => {
+  // Le if ci dessous permet d'illustrer le cas d'une erreur gérer par le composant parent ErrorBoundry
+  // if(true){
+  //   throw new Error('Erreur')
+  // }
   return (
     <div className="cardsList">
 
